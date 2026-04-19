@@ -43,9 +43,8 @@ return [
                 /*
                  * Absolute paths to directory containing the swagger annotations are stored.
                  */
-                'annotations' => [
-                    base_path('app')
-                ],
+                'annotations' => 
+                    [base_path('app/Http/Controllers')],
             ],
         ],
     ],

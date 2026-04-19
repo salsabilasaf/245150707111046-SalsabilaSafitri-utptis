@@ -207,11 +207,23 @@ Error Handling
 
 Semua endpoint menerapkan validasi dan error handling dengan format response dan kode status seperti:
 
-200 - Request berhasil
-201 - Data berhasil dibuat
-400 - ID tidak valid (bukan angka)
-404 - Data tidak ditemukan
-422 - Validasi gagal
+- 200 - Request berhasil
+- 201 - Data berhasil dibuat
+- 400 - ID tidak valid (bukan angka)
+- 404 - Data tidak ditemukan
+- 422 - Validasi gagal
+
+---
+Cara Kerja Sistem
+
+- Data disimpan dalam file JSON di storage/app/private/items.json
+- Setiap request akan membaca file JSON tersebut
+- Untuk operasi:
+  - GET: membaca data
+  - POST: menambahkan data baru ke array
+  - PUT/PATCH: mengubah data berdasarkan ID
+  - DELETE: menghapus data dari array
+- Setelah perubahan, data ditulis kembali ke file JSON
 
 ---
 

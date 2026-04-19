@@ -1,7 +1,7 @@
 UTP TIS - E-commerce API
 
-Nama  : Salsabila Safitri
-NIM   : 245150707111046
+- Nama  : Salsabila Safitri
+- NIM   : 245150707111046
 
 Deskripsi: UTP kali ini adalah membuat backend API sederhana berbasis Laravel yang mensimulasikan sistem e-commerce menggunakan mock data JSON tanpa database. API ini mendukung operasi CRUD lengkap pada data barang.
 
@@ -229,7 +229,14 @@ Cara Kerja Sistem
 
 Struktur Project
 
-app/Http/Controllers/ItemController.php -> controller utama berisi semua logic dan anotasi Swagger
-routes/api.php -> daftar semua route API
-storage/app/private/items.json -> mock data barang 
-api-docs/api-docs.json -> file hasil generate Swagger yang berisi seluruh dokumentasi endpoint
+- app/Http/Controllers/ItemController.php  
+  Berisi seluruh logic CRUD dan validasi serta anotasi Swagger
+
+- routes/api.php  
+  Mendefinisikan endpoint API yang tersedia
+
+- storage/app/private/items.json  
+  Digunakan sebagai penyimpanan data sementara (mock database)
+
+- api-docs/api-docs.json  
+  File hasil generate dokumentasi Swagger
